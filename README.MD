@@ -35,7 +35,11 @@ I then typed the following:
 
 ><p>#!/bin/bash -l<br>
 ><br>
+<<<<<<< HEAD
 >git add * #* is a variable that will add all files in this directory to the Git repository<br>
+=======
+>git add * #* is a variable that will add all tracked files in this directory to the Git repository<br>
+>>>>>>> 6 March
 >git commit -m "$1" #the second argument will be your commit<br>
 >git push -u origin main</p>
 
@@ -69,9 +73,15 @@ Step 3 of the guide asks to initialize the git repository, but since I'd previou
 >jekyll new .</p>
 
 With BBedit, I opened the file named Gemfile (no extension).
+<<<<<<< HEAD
 I commented out line 10 which read: gem "jekyll", "~> 4.2.0"
 I changed line 15 from # gem "github-pages", group: :jekyll_plugins to:
 gem "github-pages", "~> 212", group: :jekyll_plugins
+=======
+I commented out line 10 which read: gem "jekyll", "\~> 4.2.0"
+I changed line 15 from # gem "github-pages", group: :jekyll_plugins to:
+gem "github-pages", "\~> 212", group: :jekyll_plugins
+>>>>>>> 6 March
 I looked up the latest version per the GitHub instructions
 I saved and closed Gemfile
 
@@ -84,8 +94,51 @@ I took a break at this point.  After pushing changes git declared there was noth
 
 Still working on Jekyll.  I noticed my main was not accepting commits or pushes from the local repository.  After searching the web for solutions and reinitializing the repository, nothing worked.  I will preserve this file, delete the local and web repositories and start over.
 
+<<<<<<< HEAD
 >
 To provide a replicable workflow of my analysis of D. balteatus genomic data
 
 >cd Desktop/Daily_Work
 >mkdir DipterygonotusBalteatus
+=======
+><p>cd Desktop/Daily_Work<br>
+>mkdir DipterygonotusBalteatus<br>
+> cd DipterygonotusBalteatus<br>
+>git init<br>
+Initialized empty Git repository in /Users/ivanlopez/Desktop/Daily_Work/.git/<br>
+>git add README.MD<br>
+>git add PPP_logo.png<br>
+>git status<br>
+>On branch master<br>
+><br>
+>No commits yet<br>
+><br>
+>Changes to be committed:<br>
+>  (use "git rm --cached <file>..." to unstage)<br>
+><br>
+>	new file:   PPP_logo.png<br>
+>	new file:   README.MD<br>
+>git commit -m "Restarting repository"<br>
+>git branch -M main<br>
+>git remote add origin https://github.com/Getterrobog/DipterygonotusBalteatus.git<br>
+>git push -u origin main<br>
+><p>mkdir docs<br>
+>cd docs<br>
+><p>gem install --user-install jekyll<br>
+>git checkout --orphan gh-pages<br>
+>jekyll new .</p>
+
+Again with BBedit, I opened the file named Gemfile (no extension).
+I commented out line 10 which read: gem "jekyll", "\~> 4.2.0"
+I changed line 15 from # gem "github-pages", group: :jekyll_plugins to:
+gem "github-pages", "\~> 212", group: :jekyll_plugins
+I looked up the latest version per the GitHub instructions
+I saved and closed Gemfile.
+I skipped step 12
+
+I ran this step and got an error
+
+>gem update github-pages
+
+I stopped for the day. 
+>>>>>>> 6 March
