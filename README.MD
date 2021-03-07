@@ -34,11 +34,11 @@ On command line I typed:
 (I watch too many cartoons.)
 I then typed the following:
 
->#!/bin/bash -l
->
->git add * #* is a variable that will add all tracked files in this directory to the Git repository
->git commit -m "$1" #the second argument will be your commit
->git push -u origin main
+>#!/bin/bash -l\
+>\
+>git add * #* is a variable that will add all tracked files in this directory to the Git repository\
+>git commit -m "$1" #the second argument will be your commit\
+>git push -u origin main\
 
 I saved this script to my scripts directory and gave it permission to execute.
 
