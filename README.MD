@@ -4,7 +4,7 @@ The purpose of the repository is to share code for the analysis of genomic data 
 
 All work done is for the [Philippines PIRE Project](https://sites.wp.odu.edu/PIRE/), [NSF Award #1743711](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1743711).
 
-![](https://github.com/Getterrobog/DipterygonotusBalteatus/blob/main/PPP_logo.png =50x)
+![](https://github.com/Getterrobog/DipterygonotusBalteatus/blob/main/PPP_logo.png)
 
 All data analysis will be done by interfacing with the Old Dominion University High Performance Computing Wahab cluster, either through a remote connection on MS Remote Desktop or via Terminal on Mac OS.
 
