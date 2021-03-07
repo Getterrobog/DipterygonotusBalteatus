@@ -38,7 +38,7 @@ I then typed the following:
 >\
 >git add * #* is a variable that will add all tracked files in this directory to the Git repository\
 >git commit -m "$1" #the second argument will be your commit\
->git push -u origin main\
+>git push -u origin main
 
 I saved this script to my scripts directory and gave it permission to execute.
 
@@ -64,10 +64,10 @@ I then executed the following on the command line:
 
 Step 3 of the guide asks to initialize the git repository, but since I'd previously cloned the repository, this step is not necessary.
 
->mkdir docs
->cd docs
->gem install --user-install jekyll
->git checkout --orphan gh-pages
+>mkdir docs\
+>cd docs\
+>gem install --user-install jekyll\
+>git checkout --orphan gh-pages\
 >jekyll new .
 
 With BBedit, I opened the file named Gemfile (no extension).
@@ -77,7 +77,7 @@ gem "github-pages", "\~> 212", group: :jekyll_plugins
 I looked up the latest version per the GitHub instructions
 I saved and closed Gemfile
 
->bundle update
+>bundle update\
 > cd ../
 
 I took a break at this point.  After pushing changes git declared there was nothing to commit.  I did not understand what I had done.
@@ -86,31 +86,31 @@ I took a break at this point.  After pushing changes git declared there was noth
 
 Still working on Jekyll.  I noticed my main was not accepting commits or pushes from the local repository.  After searching the web for solutions and reinitializing the repository, nothing worked.  I will preserve this file, delete the local and web repositories and start over.
 
->cd Desktop/Daily_Work
->mkdir DipterygonotusBalteatus
-> cd DipterygonotusBalteatus
->git init
->Initialized empty Git repository in /Users/ivanlopez/Desktop/Daily_Work/.git/
->git add README.MD
->git add PPP_logo.png
->git status
+>cd Desktop/Daily_Work\
+>mkdir DipterygonotusBalteatus\
+> cd DipterygonotusBalteatus\
+>git init\
+>Initialized empty Git repository in /Users/ivanlopez/Desktop/Daily_Work/.git/\
+>git add README.MD\
+>git add PPP_logo.png\
+>git status\
 >On branch master
 >
 >No commits yet
 >
->Changes to be committed:
+>Changes to be committed:\
 >  (use "git rm --cached <file>..." to unstage)
 >
->	new file:   PPP_logo.png
->	new file:   README.MD
->git commit -m "Restarting repository"
->git branch -M main
->git remote add origin https://github.com/Getterrobog/DipterygonotusBalteatus.git
->git push -u origin main
->mkdir docs
->cd docs
->gem install --user-install jekyll
->git checkout --orphan gh-pages
+>	new file:   PPP_logo.png\
+>	new file:   README.MD\
+>git commit -m "Restarting repository"\
+>git branch -M main\
+>git remote add origin https://github.com/Getterrobog/DipterygonotusBalteatus.git\
+>git push -u origin main\
+>mkdir docs\
+>cd docs\
+>gem install --user-install jekyll\
+>git checkout --orphan gh-pages\
 >jekyll new .
 
 Again with BBedit, I opened the file named Gemfile (no extension).
@@ -139,19 +139,19 @@ Your branch and 'origin/main' have diverged,
 and have 1 and 1 different commits each, respectively.
   (use "git pull" to merge the remote branch into yours)
 
->git push -u origin main
->To https://github.com/Getterrobog/DipterygonotusBalteatus.git
-> ! [rejected]        main -> main (non-fast-forward)
->error: failed to push some refs to >'https://github.com/Getterrobog/DipterygonotusBalteatus.git'
->hint: Updates were rejected because the tip of your current branch is behind
->hint: its remote counterpart. Integrate the remote changes (e.g.
->hint: 'git pull ...') before pushing again.
->hint: See the 'Note about fast-forwards' in 'git push --help' for details.
->git pull
->fatal: refusing to merge unrelated histories
->git pull --rebase
->git add README.MD 
->git rebase --continue
+>git push -u origin main\
+>To https://github.com/Getterrobog/DipterygonotusBalteatus.git\
+> ! [rejected]        main -> main (non-fast-forward)\
+>error: failed to push some refs to 'https://github.com/Getterrobog/DipterygonotusBalteatus.git'\
+>hint: Updates were rejected because the tip of your current branch is behind\
+>hint: its remote counterpart. Integrate the remote changes (e.g.\
+>hint: 'git pull ...') before pushing again.\
+>hint: See the 'Note about fast-forwards' in 'git push --help' for details.\
+>git pull\
+>fatal: refusing to merge unrelated histories\
+>git pull --rebase\
+>git add README.MD \
+>git rebase --continue\
 >Gitpushinator.sh 'rebasing'
 
 That seemed to do it.  Of course I had to do what I refused to do before, which was to research the problem and learn.
