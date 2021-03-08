@@ -81,7 +81,7 @@ I looked up the latest version per the GitHub instructions
 I saved and closed Gemfile
 
 ```sh
-bundle update\
+bundle update
 cd ../
 Gitpushinator.sh 'added gh-pages'
 ```
@@ -94,30 +94,30 @@ I continued working on Jekyll.  I noticed my main was not accepting commits or p
 
 ```sh
 cd Desktop/Daily_Work
-mkdir DipterygonotusBalteatus\
-cd DipterygonotusBalteatus\
-git init\
-Initialized empty Git repository in /Users/ivanlopez/Desktop/Daily_Work/.git/\
-git add README.MD\
-git add PPP_logo.png\
-git status\
+mkdir DipterygonotusBalteatus
+cd DipterygonotusBalteatus
+git init
+Initialized empty Git repository in /Users/ivanlopez/Desktop/Daily_Work/.git/
+git add README.MD
+git add PPP_logo.png
+git status
 On branch master
 
 No commits yet
 
-Changes to be committed:\
+Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
 
-	new file:   PPP_logo.png\
-	new file:   README.MD\
-git commit -m "Restarting repository"\
-git branch -M main\
-git remote add origin https://github.com/Getterrobog/DipterygonotusBalteatus.git\
-git push -u origin main\
-mkdir docs\
-cd docs\
-gem install --user-install jekyll\
-git checkout --orphan gh-pages\
+	new file:   PPP_logo.png
+	new file:   README.MD
+git commit -m "Restarting repository"
+git branch -M main
+git remote add origin https://github.com/Getterrobog/DipterygonotusBalteatus.git
+git push -u origin main
+mkdir docs
+cd docs
+gem install --user-install jekyll
+git checkout --orphan gh-pages
 jekyll new .
 ```
 Again with BBedit, I opened the file named Gemfile (no extension).
@@ -150,7 +150,7 @@ and have 1 and 1 different commits each, respectively.
 ```
 
 ```sh
-git push -u origin main\
+git push -u origin main
 To https://github.com/Getterrobog/DipterygonotusBalteatus.git
  ! [rejected]        main -> main (non-fast-forward)
 error: failed to push some refs to 'https://github.com/Getterrobog/DipterygonotusBalteatus.git'
