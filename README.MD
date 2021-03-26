@@ -170,5 +170,21 @@ That seemed to do it.  Of course I had to do what I refused to do before, which 
 
 The website is created, but I do not know how to make it behave as I wish.  I have more research to do.
 
-***
+Now to go where I want to go all I have to do is switch branches with the following commands:
+
+`git brach` this will show all the branches in my repository. A * denotes the current branch
+
+`git checkout NAME_OF_BRACH` this will switch from one branch to another.  The directory structure of a local repository will change depending on the branch I am on.
+
+```sh
+git branch
+  gh-pages
+* main
+
+git checkout gh-pages
+Switched to branch 'gh-pages'
+
+git checkout main 
+Switched to branch 'main'
+```
 
